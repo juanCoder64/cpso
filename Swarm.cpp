@@ -590,7 +590,7 @@ double PSO::Swarm::maximum_swarm_radius() const {
     d = bestPos.euclid_dist(swarm[i]->position);
     if (d > max_rad) max_rad = d;
   }
-  return d;
+  return max_rad;
 }
 
 // ===========================================================================
